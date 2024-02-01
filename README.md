@@ -1,6 +1,7 @@
 #RESUME HTML (with Screenshots)
 
 Below the screenshots of what the Resume as a web page, is the HTML/CSS code.
+The Nav Bar on top is responsive, and when clicked it will direct you to the certain section in the webpage
 
 <img width="1470" alt="Screenshot 2024-02-01 at 1 55 08 PM" src="https://github.com/erikarispe/Resume/assets/79620829/2edb704a-31c6-4bdd-b01b-fbac2d745be9">
 <img width="1470" alt="Screenshot 2024-02-01 at 1 55 39 PM" src="https://github.com/erikarispe/Resume/assets/79620829/290d07ac-1184-48bd-bdb7-dcccd697029d">
