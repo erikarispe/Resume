@@ -7,74 +7,83 @@
     <style>
 
         /* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-  position: fixed;
-  margin-bottom: 20px;
-  top: 0px; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  font-size: 22px;
-  letter-spacing: 2px;
-  
-  
-}
-.container {
-    margin-top: 60px; /* Adjust the margin based on your navigation bar height */
-}
 
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
+        .nav-container {
+            width: 100%;
+            background-color: #000328;
 
+        }
+
+        .navbar {
+            display: grid;
+            grid-template-columns: 0.2fr auto 1fr;
+            align-items: center;
+            height: 80px;
+            width: 90%;
+            max-width: 1720px;
+            margin: 0 auto;
+
+        }
+
+        #navbar-logo {
+            color: white;
+            justify-self: start;
+            margin-bottom: 20px;
+        }
+
+        #navbar-logo {
+            cursor: pointer;
+        }
+
+        .nav-menu {
+            display: grid;
+            grid-template-columns: repeat(8, auto);
+            list-style: none;
+            text-align: center;
+            width: 70%;
+            justify-self: end;
+        }
+
+        .nav-links {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .nav-links:hover {
+            color: lightblue;
+            transition: all 0.2s ease-out;
+
+        }
 
 
         body {
-            background-color: white;
-            justify-content: center;
-            align-items: center;
+            background-color: #333;
         }
 
-        .header {
-    background-color: #333;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 36px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    color: #ddd;
-    margin-top: 20px;
-}
+        
+
+
+      
+
 
         .clearance {
-            margin-top: 20px;
+            margin-top: 50px;
             text-align: center;
-            background-color: #333;
+            
             color: #ddd;
             font-size: 24px; 
             
         }
 
         .clearancedetails {
-            background-color: #333;
+            
             color: #ddd;
             font-size: 18px;
             text-align:center;
@@ -82,45 +91,47 @@
 
         .contact {
 
-            background-color: #333;
+            
             color: #ddd;
             text-align: center;
             font-size: 24px;
             margin-top: 20px;
+            margin-bottom: 20px;
         }
 
        .info {
-        background-color: #333;
+        
             color: #ddd;
             font-size: 18px;
             margin-right: 20px;
         }
         
         .websitelinks {
-            background-color: #333;
+            
             color: #ddd;
             margin-top: 20px;
             font-size: 24px;
             text-align: center;
+            margin-top: 50px;
         }
 
         .websitelinksspan {
-            background-color: #333;
+       
             color: #ddd;
             font-size: 18px;
             margin-right: 20px;
         }
 
         .education {
-            background-color: #333;
+            
             color: #ddd;
             text-align: center;
             font-size: 24px;
-            margin-top: 20px;
+            margin-top: 40px;
         }
 
         .schools {
-            background-color: #333;
+           
             color: #ddd;
             font-size: 18px;
             text-align: center;
@@ -128,7 +139,7 @@
         }
         
         .schoolOrgs {
-            background-color: #333;
+         
             color: #ddd;
             font-size: 15px;
             text-align: center;
@@ -136,26 +147,27 @@
 
         .experience {
             font-size: 24px;
-            background-color: #333;
+            
             color: #ddd;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 50px;
+            
         }
 
         .jobs {
-            background-color: #333;
+            
             color: #ddd;
             font-size: 18px;
             text-align: left;
             display: block;
-            margin-top: 10px;
+            margin-top: 20px;
             
             
 
         }
 
         .jobDetails {
-            background-color: #333;
+           
             color: #ddd;
             font-size: 16px;
             text-align: start;
@@ -165,76 +177,93 @@
         }
 
         .skills {
-            margin-top: 20px;
+            margin-top: 50px;
             text-align: center;
-            background-color: #333;
+            
             color: #ddd;
             font-size: 24px; 
+            
         }
 
         .skilldetails {
-            background-color: #333;
+           
             color: #ddd;
             font-size: 18px;
             text-align:center;
+            margin: 20px;
         }
 
         .certification {
-            margin-top: 20px;
+            margin-top: 50px;
             text-align: center;
-            background-color: #333;
+         
             color: #ddd;
             font-size: 24px; 
+            
         }
 
         .certificationdetails {
-            background-color: #333;
+           
             color: #ddd;
             font-size: 18px;
             text-align:center;
         }
 
         .professionalsummary {
-            margin-top: 20px;
+            margin-top: 50px;
             text-align: center;
-            background-color: #333;
+           
             color: #ddd;
             font-size: 24px; 
+            
         }
 
         .professionalsummarydetails {
-            background-color: #333;
+            
             color: #ddd;
             font-size: 18px;
             text-align:center;
+            margin-top: 50px;
         }
 
         a {
             color: #ddd;
         }
 
-
-
+    
     </style>
 </head>
-<body>
 
-    <div class="container">
-        <nav class="topnav">
-            <span class='active'><a href="#contact">Contact</a></span>
-            <span class=''><a href="#websitelinks">Links</a></span>
-            <span class=''><a href="#summary" >Summary</a></span>
-            <span class=''><a href="#clearance">Clearance</a></span>
-            <span class=''><a href="#skills">Skills</a></span>
-            <span class=''><a href='#education'>Education</a></span>
-            <span class=''><a href='#certification'>Certification</a></span>
-            <span class=''><a href='#experience'>Experience</a></span>
+
+    <div class="nav-container">
+        <nav class="navbar">
+            <h1 id="navbar-logo">Erik Arispe</h1>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#contact" class="nav-links">Contact</a></li>
+                <li><a href="#websitelinks" class="nav-links">Websites</a></li>
+                <li><a href="#summary" class="nav-links">Summary</a></li>
+                <li><a href="#clearance" class="nav-links">Clearance</a></li>
+                <li><a href="#skills" class="nav-links">Skills</a></li>
+                <li><a href="#education" class="nav-links">Education</a></li>
+                <li><a href="#certification" class="nav-links">Certifications</a></li>
+                <li><a href="#experience" class="nav-links">Experience</a></li>
+          
+
+        </ul>
         </nav>
 
-    <div class="header">
-        Erik Arispe 
+        <script src="app.js">
 
+        </script>
     </div>
+
+<body>
+
 
   
 
