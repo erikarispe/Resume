@@ -6,8 +6,6 @@
     <title>Erik Arispe Resume</title>
     <style>
 
-        /* Add a black background color to the top navigation */
-
         * {
             box-sizing: border-box;
             margin: 0;
